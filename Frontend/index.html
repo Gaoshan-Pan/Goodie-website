@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P6L4P2D3');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaoshan's food Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: inline-block;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+            vertical-align: top;
+            text-align: center;
+        }
+        .product button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+        #recommendations, #feedback {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<!-- This is a comment in HTML -->
+<!-- nav is navigation; click indicaitng Cart, then nav to the corrosponding page -->
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6L4P2D3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <h1>Welcome to Gaoshan's Goodies Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Products</h2>
+        <div id="product-gallery">
+            <div class="product">
+                <h3>Chocolate Cookies</h3>
+                <p>$5.00</p>
+                <button onclick="addToCart('Chocolate Cookies', 5)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Fruity Candy</h3>
+                <p>$3.00</p>
+                <button onclick="addToCart('Fruity Candy', 3)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Vanilla Cupcakes</h3>
+                <p>$4.00</p>
+                <button onclick="addToCart('Vanilla Cupcakes', 4)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Mint Chocolate</h3>
+                <p>$6.00</p>
+                <button onclick="addToCart('Mint Chocolate', 6)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Berry Tarts</h3>
+                <p>$5.50</p>
+                <button onclick="addToCart('Berry Tarts', 5.50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Almond Cookies</h3>
+                <p>$7.00</p>
+                <button onclick="addToCart('Almond Cookies', 7)">Add to Cart</button>
+            </div>
+        </div>
+
+        <section id="recommendations">
+            <h2>Recommended for You</h2>
+            <div id="recommendation-container">
+                <div class="product">
+                    <h3>Peanut Butter Cups</h3>
+                    <p>$4.50</p>
+                    <button onclick="addToCart('Peanut Butter Cups', 4.50)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Hazelnut Spread</h3>
+                    <p>$5.50</p>
+                    <button onclick="addToCart('Hazelnut Spread', 5.50)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Chewy Caramel Bars</h3>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Chewy Caramel Bars', 3)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Strawberry Gummies</h3>
+                    <p>$2.50</p>
+                    <button onclick="addToCart('Strawberry Gummies', 2.50)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Dark Chocolate</h3>
+                    <p>$6.00</p>
+                    <button onclick="addToCart('Dark Chocolate', 6)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Vanilla Fudge</h3>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Vanilla Fudge', 3.50)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback">
+            <h2>We Value Your Feedback</h2>
+            <form id="feedback-form">
+                <textarea placeholder="Share your experience..." required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: gaoshanpan26@gmail.com</p>
+        <p>&copy; 2025 Gaoshan's Goodies Shop</p>
+    </footer>
+
+    <script>
+        function addToCart(product, price) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name: product, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${product} has been added to your cart!`);
+        }
+    </script>
+    
+</body>
+</html>

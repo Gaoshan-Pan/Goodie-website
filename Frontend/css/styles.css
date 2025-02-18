@@ -1,0 +1,147 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e68b8b;
+}
+
+/* Header Styles */
+header {
+    background-color: #c8a6a6;
+    color: rgb(229, 214, 214);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+}
+
+/* Product Card Styles */
+.product {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(33% - 2rem);
+    margin: 1rem;
+    text-align: center;
+}
+
+.product h3 {
+    margin: 0 0 0.5rem;
+}
+
+.product p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+/* Cart Page Styles */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cart-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: darkred;
+}
+
+/* Total Price Styles */
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+/* Clear Cart Button Styles */
+.clear-cart {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-cart:hover {
+    background-color: darkred;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative; /* Changed from absolute to prevent issues with dynamic content */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .product {
+        width: calc(100% - 2rem);
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item button {
+        margin-top: 0.5rem;
+        align-self: flex-end;
+    }
+}
